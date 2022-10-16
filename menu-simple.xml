@@ -7,178 +7,178 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/  file:///usr/share/openbox/menu.xsd">
   <menu id="root-menu" title="Menu" label="Openbox 3">
 <!--	<separator label="Main Menu"/>  -->
-		<item label="Terminal Emulator">
+		<item label="终端">
 			<action name="Execute">
 				<command>alacritty</command>
 			</action>
 		</item>
-		<item label="File Manager">
+		<item label="文件">
 			<action name="Execute">
 				<command>thunar</command>
 			</action>
 		</item>
-		<item label="Web Browser">
+		<item label="浏览器">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
 		</item>
-		<item label="Text Editor">
+		<item label="编辑器">
 			<action name="Execute">
 				<command>geany</command>
 			</action>
 		</item>
 		<separator/>
-		<menu id="app-menu" execute="obmenu-generator" label="Applications"/>
-		<menu id="apps-as-root" label="Apps As Root">
-			<item label="Terminal (alacritty)">
+		<menu id="app-menu" execute="obmenu-generator" label="应用程序"/>
+		<menu id="apps-as-root" label="以管理员权限打开">
+			<item label="终端(Alacritty)">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root alacritty</execute>
 				</action>
 			</item>
-			<item label="File Manager (thunar)">
+			<item label="文件(Thunar)">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'dbus-run-session thunar'</execute>
 				</action>
 			</item>
-			<item label="Text Editor (geany)">
+			<item label="编辑器(Geany)">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root geany</execute>
 				</action>
 			</item>
 			<separator/>
-			<item label="File Manager CLI (ranger)">
+			<item label="命令行文件(Ranger)">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'alacritty -e ranger'</execute>
 				</action>
 			</item>
-			<item label="Text Editor CLI (vim)">
+			<item label="命令行编辑器(Vim)">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'alacritty -e vim'</execute>
 				</action>
 			</item>
 			<separator/>
-			<item label="Lxappearance">
+			<item label="外观与体验">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'lxappearance'</execute>
 				</action>
 			</item>
-			<item label="QT5 Settings">
+			<item label="QT5设置">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'qt5ct'</execute>
 				</action>
 			</item>
-			<item label="kvantum Manager">
+			<item label="kvantum管理器">
 				<action name="Execute">
 					<execute>~/.config/openbox/rofi/bin/apps_as_root 'kvantummanager'</execute>
 				</action>
 			</item>
 		</menu>
-		<menu id="ac-shots" execute="&pipes;/ac-shots" label="Screenshot"/>
-		<menu id="ac-record" execute="&pipes;/ac-record" label="Screen Recorder"/>
+		<menu id="ac-shots" execute="&pipes;/ac-shots" label="截屏"/>
+		<menu id="ac-record" execute="&pipes;/ac-record" label="录屏"/>
 		<separator/>
-		<menu id="ac-places" execute="&pipes;/ac-places --recent ~/" label="Places"/>
-		<menu id="ac-recent" execute="&pipes;/ac-recent-files" label="Recent Files"/>
-		<menu id="preferences" label="Preferences">
+		<menu id="ac-places" execute="&pipes;/ac-places --recent ~/" label="位置"/>
+		<menu id="ac-recent" execute="&pipes;/ac-recent-files" label="最近文件"/>
+		<menu id="preferences" label="选项">
 			<menu id="obconfig" label="Openbox">
-				<menu id="ac-ob-menu" execute="&pipes;/ac-ob-menu" label="Menu Style"/>
-				<item label="Settings">
+				<menu id="ac-ob-menu" execute="&pipes;/ac-ob-menu" label="菜单样式"/>
+				<item label="设置">
 					<action name="Execute">
 						<command>obconf</command>
 					</action>
 				</item>
 				<separator/>
-				<item label="Edit menu.xml">
+				<item label="编辑menu.xml">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/menu-simple.xml</command>
 					</action>
 				</item>
-				<item label="Edit rc.xml">
+				<item label="编辑rc.xml">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/rc.xml</command>
 					</action>
 				</item>
-				<item label="Edit autostart">
+				<item label="编辑autostart">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/autostart</command>
 					</action>
 				</item>
 				<separator/>
-				<item label="Reconfigure">
+				<item label="重置">
 					<action name="Reconfigure"/>
 				</item>
-				<item label="Restart">
+				<item label="重启">
 					<action name="Restart"/>
 				</item>
 			</menu>
-			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="Compositor"/>
-			<menu id="XrandrPipeMenu" execute="&pipes;/ac-randr" label="Display / Monitor"/>
+			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="效果"/>
+			<menu id="XrandrPipeMenu" execute="&pipes;/ac-randr" label="显示"/>
 			<separator/>
-			<menu id="StylePipeMenu" execute="&pipes;/ac-change-style" label="Change Style"/>
-			<menu id="FontPipeMenu" execute="&pipes;/ac-change-fonts" label="Change Font"/>
-			<menu id="SchemePipeMenu" execute="&pipes;/ac-change-scheme" label="Terminal Color Scheme"/>
+			<menu id="StylePipeMenu" execute="&pipes;/ac-change-style" label="主题"/>
+			<menu id="FontPipeMenu" execute="&pipes;/ac-change-fonts" label="字体"/>
+			<menu id="SchemePipeMenu" execute="&pipes;/ac-change-scheme" label="终端配色"/>
 			<separator/>
-			<item label="Change Wallpaper">
+			<item label="壁纸">
 				<action name="Execute">
 					<command>nitrogen</command>
 				</action>
 			</item>
-			<item label="Appearance Settings">
+			<item label="外观">
 				<action name="Execute">
 					<command>xfce4-appearance-settings</command>
 				</action>
 			</item>
-			<item label="QT5 Settings">
+			<item label="QT5设置">
 				<action name="Execute">
 					<command>qt5ct</command>
 				</action>
 			</item>
-			<item label="Kvantum Manager">
+			<item label="Kvantum管理器">
 				<action name="Execute">
 					<command>kvantummanager</command>
 				</action>
 			</item>
 			<separator/>
-			<item label="Power Settings">
+			<item label="电源管理器">
 				<action name="Execute">
 					<command>xfce4-power-manager-settings</command>
 				</action>
 			</item>
-			<item label="Audio Settings">
+			<item label="音量控制">
 				<action name="Execute">
 					<command>pavucontrol</command>
 				</action>
 			</item>
-			<item label="Settings Manager">
+			<item label="系统设置">
 				<action name="Execute">
 					<command>xfce4-settings-manager</command>
 				</action>
 			</item>
 		</menu>
-		<menu id="KeybindsPipeMenu" execute="&pipes;/ac-kb-pipemenu" label="Keybinds"/>
+		<menu id="KeybindsPipeMenu" execute="&pipes;/ac-kb-pipemenu" label="键位绑定"/>
 		<separator/>
-		<item label="Lock Screen">
+		<item label="锁屏">
 			<action name="Execute">
 				<command>betterlockscreen --lock</command>
 			</action>
 		</item>
-		<menu id="Exit" label="System">
-				<menu id="SystemPipeMenu" execute="&pipes;/ac-sysinfo" label="Stats"/>
+		<menu id="Exit" label="系统">
+				<menu id="SystemPipeMenu" execute="&pipes;/ac-sysinfo" label="状态"/>
 				<item label="Logout">
 					<action name="Execute">
 						<command>/usr/share/archcraft/openbox/pipemenus/ac-powermenu --logout</command>
 					</action>
 				</item>
-				<item label="Suspend">
+				<item label="睡眠">
 					<action name="Execute">
 						<command>/usr/share/archcraft/openbox/pipemenus/ac-powermenu --suspent</command>
 					</action>
 				</item>
-				<item label="Reboot">
+				<item label="重启">
 					<action name="Execute">
 						<command>/usr/share/archcraft/openbox/pipemenus/ac-powermenu --reboot</command>
 					</action>
 				</item>
-				<item label="Shutdown">
+				<item label="关机">
 					<action name="Execute">
 						<command>/usr/share/archcraft/openbox/pipemenus/ac-powermenu --shutdown</command>
 					</action>

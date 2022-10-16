@@ -27,37 +27,37 @@
     <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Sans</name>
+      <name>&#x6587;&#x6CC9;&#x9A7F;&#x5FAE;&#x7C73;&#x9ED1;</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
