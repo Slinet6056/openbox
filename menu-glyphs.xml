@@ -110,7 +110,7 @@
 					<action name="Restart"/>
 				</item>
 			</menu>
-			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="效果"/>
+			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="合成器"/>
 			<menu id="XrandrPipeMenu" execute="&pipes;/ac-randr" label="显示"/>
 			<separator/>
 			<menu id="StylePipeMenu" execute="&pipes;/ac-change-style" label="主题"/>
